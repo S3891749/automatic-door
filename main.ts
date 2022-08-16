@@ -5,32 +5,32 @@ input.onSound(DetectedSound.Loud, function () {
         music.playMelody("- B A G A G A B ", 120)
     }
     basic.showLeds(`
-        . . . . .
+        # . . . #
         # . # . #
         # . # . #
+        # . # . #
+        # # # # #
+        `)
+    basic.showLeds(`
+        # # # # .
+        # . . . .
+        # # # # .
+        # . . . .
+        # # # # .
+        `)
+    basic.showLeds(`
+        # . . . .
+        # . . . .
+        # . . . .
+        # . . . .
+        # # # # .
+        `)
+    basic.showLeds(`
         . # # # .
-        . . . . .
-        `)
-    basic.showLeds(`
-        # # # . .
-        # . . . .
-        # # # . .
-        # . . . .
-        # # # . .
-        `)
-    basic.showLeds(`
         # . . . .
         # . . . .
-        # . . . .
-        # . . . .
-        # # # . .
-        `)
-    basic.showLeds(`
-        . # # . .
-        # . . . .
-        # . . . .
-        # . . # .
-        . # # . .
+        # . . . #
+        . # # # .
         `)
     basic.showLeds(`
         . # # # .
@@ -52,6 +52,46 @@ input.onSound(DetectedSound.Loud, function () {
         # # # . .
         # . . . .
         # # # . .
+        `)
+    basic.clearScreen()
+})
+input.onPinPressed(TouchPin.P1, function () {
+    music.playMelody("G G F F E E D C ", 120)
+    servos.P0.setAngle(180)
+    basic.showLeds(`
+        . # # # .
+        # . . . .
+        # . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        # . . . .
+        # . . . .
+        # . . . .
+        # . . . .
+        # # # # .
+        `)
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        # # # # #
+        # . . . .
+        # # # # #
+        . . . . #
+        # # # # #
+        `)
+    basic.showLeds(`
+        # # # # .
+        # . . . .
+        # # # # .
+        # . . . .
+        # # # # .
         `)
     basic.clearScreen()
 })
